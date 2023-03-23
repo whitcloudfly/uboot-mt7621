@@ -21,7 +21,7 @@ on:
         description: 'Kernel Load Address'
         required: true
         type: string
-        default: '0x50000'
+        default: '0x80001000'
       reset_pin:
         description: 'Reset Button GPIO'
         required: true
