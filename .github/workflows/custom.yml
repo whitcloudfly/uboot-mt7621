@@ -16,7 +16,7 @@ on:
         description: 'MTD Partition Table'
         required: true
         type: string
-        default: '192k(u-boot),64k(u-boot-env),64k(factory),32448k(firmware)'
+        default: '192k(u-boot),64k(u-boot-env),64k(factory),-(firmware)'
       kernel_offset:
         description: 'Kernel Load Address'
         required: true
