@@ -11,11 +11,12 @@ on:
         - 'NOR'
         - 'NAND'
         - 'NAND-NMBM'
+        default: 'NOR'
       mtdparts:
         description: 'MTD Partition Table'
         required: true
         type: string
-        default: '192k(u-boot),64k(u-boot-env),64k(factory),-(firmware)'
+        default: '192k(u-boot),64k(u-boot-env),64k(factory),32448k(firmware)'
       kernel_offset:
         description: 'Kernel Load Address'
         required: true
@@ -25,12 +26,12 @@ on:
         description: 'Reset Button GPIO'
         required: true
         type: number
-        default: -1
+        default: 3
       sysled_pin:
         description: 'System LED GPIO'
         required: true
         type: number
-        default: -1
+        default: 15
       cpufreq:
         description: 'CPU Frequency (400 - 1200)'
         required: true
@@ -60,6 +61,7 @@ on:
         - 'DDR3-256MiB'
         - 'DDR3-512MiB'
         - 'DDR3-128MiB-KGD'
+        default: 'DDR3-512MiB'
       oldparam:
         description: 'Use Old DDR Timing Parameters'
         required: true
@@ -72,6 +74,7 @@ on:
         options:
         - '57600'
         - '115200'
+        default: '115200'
 
 jobs:
   build:
