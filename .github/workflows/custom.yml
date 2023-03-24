@@ -16,7 +16,7 @@ on:
         description: 'MTD Partition Table'
         required: true
         type: string
-        default: '192k(Bootloader),256k(nvram),320k(Factory),4096k(linux),-(rootfs)'
+        default: '192k(Bootloader),64k(nvram),64k(Factory),3776k(linux),-(rootfs)'
       kernel_offset:
         description: 'Kernel Load Address'
         required: true
