@@ -46,7 +46,7 @@ on:
         - '800'
         - '1066'
         - '1200'
-        default: '800'
+        default: '1066'
       ddrparam:
         description: 'Prefered DDR Init Parameters'
         required: true
